@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row-header {
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 25%;
+    max-width: 200px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.filter-container {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.form-check-inline {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.year-box {
+    width: 80px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+/* LAYOUT MENYAMPING & TIDAK NEMPEL VERTIKAL */
+.row-books {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+}
+
+.book {
+    width: 31.333% !important;
+    margin: 1% !important;
+    box-sizing: border-box !important;
+    margin-bottom: 25px !important; /* Mencegah atas-bawah menempel */
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card img {
+    margin-bottom: 15px;
+}
+
+.card-title {
+    margin: 10px 0 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.card-text {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #495057;
+}
+
+.text-muted {
+    color: #6c757d;
+    font-size: 13px;
+}

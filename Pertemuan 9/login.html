@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2 id="keterangan">Silahkan Masuk</h2>
+        
+        <form onsubmit="event.preventDefault();">
+            <div class="user-box">
+                <input type="text" id="usr" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" id="pass" required="">
+                <label>Password</label>
+            </div>
+            
+            <a href="#" onclick="cek()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </a>
+        </form>
+        
+        <div class="bawah">
+            <span class="test">Belum punya akun? <a href="register.html">Register</a></span> <br>
+            <span class="test">Kembali <a href="index.html">Back</a></span>
+        </div>
+    </div>
+
+    <script>
+    function cek(){
+        let username = document.getElementById("usr").value;
+        let password = document.getElementById("pass").value;
+        
+        if (username == "andre" && password == "web") {
+            document.getElementById("keterangan").innerHTML = "Login Sukses";
+        } else {
+            document.getElementById("keterangan").innerHTML = "Username atau Password Salah";
+        }
+    }
+    </script>
+</body>
+</html>

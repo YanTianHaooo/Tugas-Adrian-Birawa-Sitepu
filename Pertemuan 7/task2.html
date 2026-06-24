@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .kalkulator {
+            border: 2px solid #333;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kalkulator">
+        <h1>Kalkulator Sederhana</h1>
+        
+        <input type="number" id="angka1" placeholder="Angka 1" value="0">
+        <input type="number" id="angka2" placeholder="Angka 2" value="0">
+        <br><br>
+
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('*')">×</button>
+        <button onclick="hitung('/')">/</button>
+        
+        <h2 id="hasil">Hasil: -</h2>
+    </div>
+
+    <script>
+        function hitung(operator) {
+            var n1 = parseFloat(document.getElementById("angka1").value);
+            var n2 = parseFloat(document.getElementById("angka2").value);
+            var hasilHitung = 0;
+
+            if (isNaN(n1) || !isNaN(n2) === false) {
+                document.getElementById("hasil").innerHTML = "Hasil: Input tidak valid!";
+                return;
+            }
+
+            if (operator === '+') {
+                hasilHitung = n1 + n2;
+            } else if (operator === '-') {
+                hasilHitung = n1 - n2;
+            } else if (operator === '*') {
+                hasilHitung = n1 * n2;
+            } else if (operator === '/') {
+                if (n2 === 0) {
+                    document.getElementById("hasil").innerHTML = "Hasil: Tidak bisa dibagi 0";
+                    return;
+                }
+                hasilHitung = n1 / n2;
+            }
+
+            document.getElementById("hasil").innerHTML = "Hasil: " + hasilHitung;
+        }
+    </script>
+
+</body>
+</html>

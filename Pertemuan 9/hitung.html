@@ -1,0 +1,25 @@
+<body>
+
+<form action="#">
+    <input type="number" id="alas" placeholder="Alas Segitiga">
+    <br>
+    <input type="number" id="tinggi" placeholder="Tinggi Segitiga">
+    <br>
+    <button type="button" id="submit" onclick="hitung()">Hitung Luas</button>
+</form>
+
+<p id="hasil"></p>
+
+<script>
+function triangle(a, b){
+    return a * b / 2; 
+}
+
+function hitung(){
+    var alas = parseInt(document.getElementById("alas").value);
+    var tinggi = parseInt(document.getElementById("tinggi").value);
+    
+    document.getElementById("hasil").innerHTML = triangle(alas, tinggi);
+}
+</script>
+</body>

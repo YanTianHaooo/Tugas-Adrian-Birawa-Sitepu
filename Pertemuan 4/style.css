@@ -1,0 +1,64 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+#judulsatu,
+#juduldua {
+  color: red;
+}
+
+#judulsatu {
+  color: blue !important;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .home li {
+  display: inline-flex;
+}
+
+.nav .sub-nav li {
+  display: inline-flex;
+  padding: 4px;
+
+  .submenu {
+    display: none;
+  }
+}
+
+.nav .authentication li {
+  display: inline-flex;
+  padding: 4px;
+  a {
+    text-decoration: none;
+  }
+  .login {
+    background-color: rgb(234, 232, 232);
+    color: blue;
+    padding: 7px;
+    border-radius: 8px;
+  }
+  .register {
+    background-color: blue;
+    color: white;
+    padding: 7px;
+    border-radius: 8px;
+  }
+
+  .login:hover {
+    background-color: gray;
+    color: white;
+  }
+
+  .register:hover {
+    background-color: rgb(72, 72, 244);
+    color: white;
+  }
+}

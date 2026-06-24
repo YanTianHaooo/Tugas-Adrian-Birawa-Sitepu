@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar JavaScript</title>
+    <style>
+        body{
+            margin-left:100px;
+            margin-top:80px;
+            font-family: Times New Roman;
+        }
+
+        h1{
+            font-size:60px;
+        }
+
+        p{
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Belajar JavaScript</h1>
+
+    <p id="hasil"></p>
+
+    <script>
+        var angka1 = parseInt(prompt("Angka 1 ?", ""));
+        var angka2 = parseInt(prompt("Angka 2 ?", ""));
+
+        var hasil = angka1 + angka2;
+
+        document.getElementById("hasil").innerHTML =
+            "Hasil Perhitungan " + hasil;
+    </script>
+
+</body>
+</html>
