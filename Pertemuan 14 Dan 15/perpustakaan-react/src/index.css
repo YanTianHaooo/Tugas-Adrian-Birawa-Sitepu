@@ -1,0 +1,229 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+body{
+    margin:0;
+    padding:0;
+    background:#f5f7fa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    box-shadow:0px 3px 12px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-link{
+    font-size:17px;
+    margin-left:12px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffd54f !important;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo-book{
+
+    width:180px;
+
+}
+
+.logo-title{
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    color:#0d6efd;
+
+}
+
+.logo-subtitle{
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search-box{
+
+    margin-bottom:30px;
+
+}
+
+.search-box input{
+
+    border-radius:30px;
+
+    padding:12px 20px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.18);
+
+}
+
+.card img{
+
+    border-radius:15px 15px 0px 0px;
+
+}
+
+.card-title{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    min-height:60px;
+
+}
+
+.card-footer{
+
+    background:white;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+
+    border-radius:30px;
+
+}
+
+.btn-outline-primary:hover{
+
+    color:white;
+
+}
+
+.btn-outline-warning:hover{
+
+    color:black;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-image{
+
+    max-width:420px;
+
+}
+
+/* ===========================
+   GUEST BOOK
+=========================== */
+
+.table{
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:25px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.logo-title{
+
+font-size:30px;
+
+}
+
+.logo-book{
+
+width:150px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.logo-title{
+
+font-size:26px;
+
+}
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.logo-title{
+
+font-size:22px;
+
+}
+
+.navbar-brand{
+
+font-size:20px;
+
+}
+
+}
